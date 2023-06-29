@@ -198,6 +198,7 @@ hr {
         width: inherit;
     }
     .bwg-title {
+        display: none;
         font-size: 2.5em;
     }
     .big-title {
