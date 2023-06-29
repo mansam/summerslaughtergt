@@ -6,56 +6,68 @@ src: local('Armalite Rifle'), url('armalite_rifle.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'Caslon Antique';
-    src: url('/fonts/CaslonAntique.woff2') format('woff2'),
-        url('/fonts/CaslonAntique.woff') format('woff');
+    font-family: 'Raleway';
+    src: url('fonts/Raleway-Regular.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Caslon Antique';
-    src: url('/fonts/CaslonAntique-BoldItalic.woff2') format('woff2'),
-        url('/fonts/CaslonAntique-BoldItalic.woff') format('woff');
+    src: url('fonts/CaslonAntique.woff2') format('woff2'),
+        url('fonts/CaslonAntique.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Caslon Antique';
+    src: url('fonts/CaslonAntique-BoldItalic.woff2') format('woff2'),
+        url('fonts/CaslonAntique-BoldItalic.woff') format('woff');
     font-weight: bold;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Caslon Antique';
-    src: url('/fonts/CaslonAntique-Italic.woff2') format('woff2'),
-        url('/fonts/CaslonAntique-Italic.woff') format('woff');
+    src: url('fonts/CaslonAntique-Italic.woff2') format('woff2'),
+        url('fonts/CaslonAntique-Italic.woff') format('woff');
     font-weight: normal;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Caslon Antique';
-    src: url('/fonts/CaslonAntique-Bold.woff2') format('woff2'),
-        url('/fonts/CaslonAntique-Bold.woff') format('woff');
+    src: url('fonts/CaslonAntique-Bold.woff2') format('woff2'),
+        url('fonts/CaslonAntique-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 }
 
 .wrapper {
-    width: 80%;
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
     font-size: 110%;
 }
 
 .wrapper address {
-    font-family: "Caslon Antique";
-    font-size: 125%;
+    font-family: "Caslon Antique", "serif";
+    font-size: 1.5em;
 }
 .wrapper p {
-    font-family: "Caslon Antique";
-    font-size: 125%;
+    font-family: "Caslon Antique", "sans-serif";
+    text-shadow: 1px 1px 1px black;
+    font-size: 1.40em;
 }
 .wrapper li {
-    font-family: "Caslon Antique";
+    font-family: "Caslon Antique", "serif";
     font-size: 125%;
     color: white;
+}
+
+.sub-wrapper {
+    padding: 1em;
 }
 
 .pure-g .event-block {
@@ -64,18 +76,24 @@ src: local('Armalite Rifle'), url('armalite_rifle.woff') format('woff');
 .event {
     margin-bottom: 1em;
     padding: 1em;
-    border-color: #940740;
+    border-color: #d00000;
     border-style: solid;
     border-width: 2px;
     border-radius: 12px;
     color: #ccc;
+    box-shadow: 4px 4px 4px black;
+    background-color: rgba(0,0,0,.5);
+}
+
+.event#doubles-tournament{
+    border-color: aqua;
 }
 
 .event-title {
     margin-top: 0;
     margin-bottom: 0;
     color: white;
-    font-family: "Caslon Antique"
+    font-family: "Caslon Antique", "serif";
 }
 
 ul.links {
@@ -90,54 +108,62 @@ ul.links li {
 }
 h2 {
     margin-bottom: 0;
+    font-size: 2em;
 }
 
 h1 {
-    margin-bottom: 0;
-    color: white;
-    font-family: "Caslon Antique";
-    text-shadow: 4px 4px 4px black;
+    font-size: 3em;
 }
 
 h1,h4 {
     margin-bottom: 0;
     color: white;
-    font-family: "Caslon Antique";
+    font-family: "Caslon Antique", "serif";
     text-shadow: 4px 4px 4px black;
 }
 
 h4 {
-    font-size: 150%;
+    font-size: 1.5em;
 }
 
+/*p {*/
+/*    font-family: "Caslon Antique", "serif";*/
+/*    font-size: 1.4em;*/
+/*}*/
 
-.title {
-    margin-top: 1.5em;
-    font-family: "Caslon Antique"
-}
+/*.title {*/
+/*    margin-top: 1.5em;*/
+/*    font-family: "Caslon Antique", "serif";*/
+/*}*/
 
 .big-title {
-    font-family: "Armalite Rifle";
+    font-family: "Armalite Rifle", "sans-serif";
 }
 
 body {
-    background-color: #1a1a1a;
     color: #ccc;
+    background-image: linear-gradient(to bottom, #434343 0%, black 100%);
 }
 
 a {
-    color: #C3073F;
-    font-family: "Caslon Antique";
+    color: #d00000;
+    font-family: "Caslon Antique", "serif";
     font-weight: bold;
     font-size: 150%;
-    font-style: normal
+    font-style: normal;
+    text-shadow: 4px 4px 4px black;
+}
+.event a {
+    font-size: 1.25em;
 }
 
 a.pure-button {
     background-color: white;
-    font-family: "Caslon Antique";
+    font-family: "Caslon Antique", "serif";
     font-weight: bold;
     font-size: 125%;
+    text-shadow: none;
+    box-shadow: 4px 4px 4px black;
 }
 hr {
     margin-top: 2em;
