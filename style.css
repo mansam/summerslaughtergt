@@ -195,7 +195,7 @@ hr {
         font-size: 110%;
     }
     img#logo {
-        width: 90%;
+        width: inherit;
     }
     .bwg-title {
         font-size: 2.5em;
@@ -207,7 +207,7 @@ hr {
         font-family: "Armalite Rifle", "sans-serif";
     }
     .itc-logo {
-        width: 100%;
+        width: inherit;
     }
     .events {
         box-sizing: border-box;
