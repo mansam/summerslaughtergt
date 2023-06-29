@@ -50,6 +50,19 @@ src: local('Armalite Rifle'), url('armalite_rifle.woff') format('woff');
     margin-right: auto;
     font-size: 110%;
 }
+img#logo {
+    width: 50%;
+}
+.big-title {
+    font-size: 4.5em;
+    color: #d00000;
+    margin-top: 0;
+    font-family: "Armalite Rifle", "sans-serif";
+}
+
+.itc-logo {
+    width: 50%;
+}
 
 .wrapper address {
     font-family: "Caslon Antique", "serif";
@@ -136,7 +149,7 @@ h4 {
 /*    font-family: "Caslon Antique", "serif";*/
 /*}*/
 
-.big-title {
+.bwg-title {
     font-family: "Armalite Rifle", "sans-serif";
 }
 
@@ -168,4 +181,38 @@ a.pure-button {
 hr {
     margin-top: 2em;
     color: white;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .wrapper {
+        box-sizing: border-box;
+        padding-left: .1em;
+        padding-right: .1em;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 110%;
+    }
+    img#logo {
+        width: 90%;
+    }
+    .bwg-title {
+        font-size: 2.5em;
+    }
+    .big-title {
+        font-size: 3.5em;
+        color: #d00000;
+        margin-top: 0;
+        font-family: "Armalite Rifle", "sans-serif";
+    }
+    .itc-logo {
+        width: 100%;
+    }
+    .events {
+        box-sizing: border-box;
+    }
+    .event {
+        box-sizing: border-box;
+    }
 }
